@@ -1,9 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4c4e9af1.css",
-    "main.js": "/portfolio/static/js/main.8aba65ab.js",
+    "main.js": "/portfolio/static/js/main.4b071f73.js",
     "static/js/453.6264690d.chunk.js": "/portfolio/static/js/453.6264690d.chunk.js",
     "static/media/chess.jpg": "/portfolio/static/media/chess.bed1bff027bd590c11cc.jpg",
+    "static/media/gleba.png": "/portfolio/static/media/gleba.44008fe1f1f38091de9d.png",
+    "static/media/vulcanus.png": "/portfolio/static/media/vulcanus.1c23a9bac7217f8f338c.png",
+    "static/media/nauvis.png": "/portfolio/static/media/nauvis.423d023d12384a7835aa.png",
     "static/media/grimoire2.png": "/portfolio/static/media/grimoire2.b10e266030e8d07864d4.png",
     "static/media/grimoire.png": "/portfolio/static/media/grimoire.b3f99d6a74958ac54a8c.png",
     "static/media/first_night.png": "/portfolio/static/media/first_night.7a4edaf6a4af8bbf90ac.png",
@@ -94,11 +97,11 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/portfolio/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/portfolio/index.html",
     "main.4c4e9af1.css.map": "/portfolio/static/css/main.4c4e9af1.css.map",
-    "main.8aba65ab.js.map": "/portfolio/static/js/main.8aba65ab.js.map",
+    "main.4b071f73.js.map": "/portfolio/static/js/main.4b071f73.js.map",
     "453.6264690d.chunk.js.map": "/portfolio/static/js/453.6264690d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c4e9af1.css",
-    "static/js/main.8aba65ab.js"
+    "static/js/main.4b071f73.js"
   ]
 }
