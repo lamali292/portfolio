@@ -1,12 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4c4e9af1.css",
-    "main.js": "/portfolio/static/js/main.ba1a4787.js",
-    "static/js/87.da08442d.chunk.js": "/portfolio/static/js/87.da08442d.chunk.js",
-    "static/js/453.6264690d.chunk.js": "/portfolio/static/js/453.6264690d.chunk.js",
+    "main.js": "/portfolio/static/js/main.0e50f2d6.js",
+    "static/js/87.4d3a74dd.chunk.js": "/portfolio/static/js/87.4d3a74dd.chunk.js",
+    "static/js/453.ac9b7e2a.chunk.js": "/portfolio/static/js/453.ac9b7e2a.chunk.js",
+    "static/media/guardian.png": "/portfolio/static/media/guardian.a2add001f97501dfa192.png",
     "static/media/gleba.png": "/portfolio/static/media/gleba.44008fe1f1f38091de9d.png",
+    "static/media/collector.png": "/portfolio/static/media/collector.1efae63bdfbe407b5f01.png",
+    "static/media/automaton.png": "/portfolio/static/media/automaton.03f02d70db3d43d954eb.png",
+    "static/media/champ.png": "/portfolio/static/media/champ.30d79f7be8d433ca8575.png",
+    "static/media/slimeboss.png": "/portfolio/static/media/slimeboss.135584b064e7b9bd526d.png",
+    "static/media/hermit.png": "/portfolio/static/media/hermit.94b67b8d547283f22a71.png",
+    "static/media/hexaghost.png": "/portfolio/static/media/hexaghost.ad789010ffd25ede10f1.png",
+    "static/media/encoding.png": "/portfolio/static/media/encoding.bb97c9a3a2f97f6a39eb.png",
+    "static/media/awakened.png": "/portfolio/static/media/awakened.063236077ee36f0ca519.png",
+    "static/media/selection.png": "/portfolio/static/media/selection.1821ac8798a489e4b40b.png",
     "static/media/vulcanus.png": "/portfolio/static/media/vulcanus.1c23a9bac7217f8f338c.png",
+    "static/media/snecko2.png": "/portfolio/static/media/snecko2.523c8b5301ea058cb3f1.png",
+    "static/media/snecko.png": "/portfolio/static/media/snecko.9cc67a707f992a091f7a.png",
     "static/media/nauvis.png": "/portfolio/static/media/nauvis.423d023d12384a7835aa.png",
+    "static/media/gremlins.png": "/portfolio/static/media/gremlins.32affde80dda8ab88bfa.png",
     "static/media/grimoire2.png": "/portfolio/static/media/grimoire2.b10e266030e8d07864d4.png",
     "static/media/grimoire.png": "/portfolio/static/media/grimoire.b3f99d6a74958ac54a8c.png",
     "static/media/first_night.png": "/portfolio/static/media/first_night.7a4edaf6a4af8bbf90ac.png",
@@ -97,12 +110,12 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/portfolio/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/portfolio/index.html",
     "main.4c4e9af1.css.map": "/portfolio/static/css/main.4c4e9af1.css.map",
-    "main.ba1a4787.js.map": "/portfolio/static/js/main.ba1a4787.js.map",
-    "87.da08442d.chunk.js.map": "/portfolio/static/js/87.da08442d.chunk.js.map",
-    "453.6264690d.chunk.js.map": "/portfolio/static/js/453.6264690d.chunk.js.map"
+    "main.0e50f2d6.js.map": "/portfolio/static/js/main.0e50f2d6.js.map",
+    "87.4d3a74dd.chunk.js.map": "/portfolio/static/js/87.4d3a74dd.chunk.js.map",
+    "453.ac9b7e2a.chunk.js.map": "/portfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c4e9af1.css",
-    "static/js/main.ba1a4787.js"
+    "static/js/main.0e50f2d6.js"
   ]
 }
