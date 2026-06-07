@@ -1,24 +1,35 @@
 import React from "react";
-import * as react from 'react';
-import { Box, Avatar, Typography, Stack, Button, Link, useTheme } from "@mui/material";
+import * as react from "react";
+import {
+  Box,
+  Avatar,
+  Typography,
+  Stack,
+  Button,
+  Link,
+  useTheme,
+} from "@mui/material";
 import { SiGithub, SiLinkedin, SiXing } from "react-icons/si";
-import {Mail, LucideProps} from "lucide-react"
+import { Mail, LucideProps } from "lucide-react";
 import profileImage from "../assets/profile.png";
 import { SVGProps } from "react";
 
 // Unified icon type: Lucide or react-icons
-type AnyIcon = react.ForwardRefExoticComponent<Omit<LucideProps, "ref"> & react.RefAttributes<SVGSVGElement>> | 
-            ((props?: SVGProps<SVGSVGElement>) => React.ReactElement<SVGSVGElement>);
+type AnyIcon =
+  | react.ForwardRefExoticComponent<
+      Omit<LucideProps, "ref"> & react.RefAttributes<SVGSVGElement>
+    >
+  | ((props?: SVGProps<SVGSVGElement>) => React.ReactElement<SVGSVGElement>);
 
 // Helper function to cast the icon (kept for functional compatibility)
 const CastIcon = (Icon: (props?: any) => React.ReactNode): AnyIcon => {
   return (props?: SVGProps<SVGSVGElement>) => {
     const el = Icon(props);
-    if (React.isValidElement(el)) return el as React.ReactElement<SVGSVGElement>;
+    if (React.isValidElement(el))
+      return el as React.ReactElement<SVGSVGElement>;
     return <></>;
   };
 };
-
 
 interface LinkItem {
   name: string;
@@ -30,10 +41,22 @@ interface LinkItem {
 
 // Links (using only name, url, and Icon for the modern style)
 const links: LinkItem[] = [
-  { name: "Xing", url: "https://www.xing.com/profile/Laurin_Liebhart", Icon: CastIcon(SiXing) },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/laurin-liebhart-78bb84255/", Icon: CastIcon(SiLinkedin) },
-  { name: "GitHub", url: "https://github.com/lamali292", Icon: CastIcon(SiGithub) },
-   { name: "Mail", url: "mailto:laurin@familie-liebhart.de", Icon: Mail },
+  {
+    name: "Xing",
+    url: "https://www.xing.com/profile/Laurin_Liebhart",
+    Icon: CastIcon(SiXing),
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/laurin-liebhart-78bb84255/",
+    Icon: CastIcon(SiLinkedin),
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/lamali292",
+    Icon: CastIcon(SiGithub),
+  },
+  { name: "Mail", url: "mailto:laurin@familie-liebhart.de", Icon: Mail },
 ];
 
 const Me: React.FC = () => {
@@ -49,9 +72,9 @@ const Me: React.FC = () => {
       p={4}
     >
       <Stack
-        spacing={3} 
-        alignItems="center" 
-        textAlign="center" 
+        spacing={3}
+        alignItems="center"
+        textAlign="center"
         maxWidth={480}
         // Zentrales Card-Design
         p={{ xs: 3, md: 5 }}
@@ -69,67 +92,63 @@ const Me: React.FC = () => {
             height: 120,
             transition: "transform 0.3s",
             border: `4px solid ${theme.palette.primary.main}`, // Farbiger Rand für Akzent
-            "&:hover": { 
-                transform: "scale(1.08)", // Dezenterer Hover-Effekt
-                boxShadow: theme.shadows[4]
+            "&:hover": {
+              transform: "scale(1.08)", // Dezenterer Hover-Effekt
+              boxShadow: theme.shadows[4],
             },
           }}
         />
 
-        {/* 1. NAME (Groß) */}
         <Typography
-          variant="h3" // Größerer Name
+          variant="h3"
           component="h1"
           sx={{
             fontWeight: 800,
             lineHeight: 1.1,
-            // Der Farbverlauf ist modern, bleibt erhalten
-            background: "linear-gradient(90deg, #4f46e5, #06b6d4)",
+            background: "#4f46e5",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
-            mb: 0.5
+            mb: 0.5,
           }}
         >
           Laurin Liebhart
         </Typography>
-        
-        {/* 2. ABSCHLUSS / UNI (Mittelgroß) */}
-        <Typography 
-            variant="h6" // Mittelgroß für den Abschluss
-            color="text.primary" 
-            fontWeight={500}
-            mb={1}
-        >
+
+        <Typography variant="h6" color="text.primary" fontWeight={500} mb={1}>
           M. Sc. Mathematik | TU Braunschweig
         </Typography>
 
-        {/* 3. KLEINER TEXT ÜBER KENNTNISSE */}
         <Typography
-            color="text.secondary"
-            variant="body2"
-            sx={{ maxWidth: 900, mb: 2, lineHeight: 1.6 }}
+          color="text.secondary"
+          variant="body2"
+          sx={{ maxWidth: 900, mb: 2, lineHeight: 1.6 }}
         >
-            Schwerpunkte in Numerik, Analysis und Machine Learning.<br />
-            Fundierte Programmierkenntnisse in Java, Python, Kotlin und Rust.
+          Mathestudent mit Schwerpunkten in Numerik, Analysis und Machine
+          Learning. Programmierkenntnisse in Java, Python, C#, Kotlin, Matlab, C
+          und Rust.
         </Typography>
 
-        {/* SOCIAL LINKS - Moderner Outlined-Stil */}
-        <Stack direction="row" spacing={1.5} flexWrap="wrap" justifyContent="center">
+        <Stack
+          direction="row"
+          spacing={1.5}
+          flexWrap="wrap"
+          justifyContent="center"
+        >
           {links.map(({ name, url, Icon }) => (
             <Link key={name} href={url} target="_blank" underline="none">
               <Button
                 startIcon={<Icon width={20} height={20} />}
-                variant="outlined" // Moderner Outlined-Stil
+                variant="outlined"
                 color="primary"
                 sx={{
                   fontWeight: 600,
                   borderRadius: 2,
-                  textTransform: 'none', // Kleinbuchstaben wirken oft moderner
+                  textTransform: "none",
                   borderColor: theme.palette.grey[300],
-                  '&:hover': {
+                  "&:hover": {
                     borderColor: theme.palette.primary.main,
-                    bgcolor: theme.palette.primary.light + '10', // Sehr leichter Hover-Hintergrund
-                  }
+                    bgcolor: theme.palette.primary.light + "10",
+                  },
                 }}
               >
                 {name}
